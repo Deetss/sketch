@@ -13,6 +13,18 @@ function makeGrid(){
 
 function clearGrid(){
   $('.grid').css('background-color','white');
+  /*var setDivNum = prompt("Please enter a new grid size!(Current "+ divNum +")",divNum);
+  divNum = setDivNum;
+  $('.grid').remove();
+  makeDivs(divNum);
+  makeGrid();
+  $('.grid').mouseenter(function(){
+    $(this).css('background-color','black');
+  });*/
+};
+
+function setGrid(){
+  $('.grid').css('background-color','white');
   var setDivNum = prompt("Please enter a new grid size!(Current "+ divNum +")",divNum);
   divNum = setDivNum;
   $('.grid').remove();
@@ -22,7 +34,6 @@ function clearGrid(){
     $(this).css('background-color','black');
     });
 };
-
 function toggleRainbow(){
   $('.grid').mouseenter(function(){
       var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
@@ -30,29 +41,37 @@ function toggleRainbow(){
     });
 };
 
-/*function dropDownColor(){
-  if($('option').value === 'black'){
-    $('.grid').mouseenter(function(){
-      $(this).css('background-color','black');
-      });
-    }else if ($('.color>option').value === 'rainbow'){
-      toggleRainbow();
-    }else if ($('.color>option').value === 'red') {
-      $('.grid').mouseenter(function(){
-        $(this).css('background-color','red');
-        });
-    }else if ($('.color>option').value === 'blue') {
-      $('.grid').mouseenter(function(){
-        $(this).css('background-color','blue');
-        });
-    }
-};*/
-
-
 $(document).ready(function(){
     makeDivs(divNum);
     makeGrid();
     $('.grid').mouseenter(function(){
       $(this).css('background-color','black');
       });
+    $('button').click(function(){
+      var id = $(this).attr('id');
+      if (id === 'black'){
+        console.log('black is selected');
+        $('.grid').mouseenter(function(){
+          $(this).css('background-color',id);
+          });
+      }
+      else if(id === 'red'){
+        console.log('red is selected');
+        $('.grid').mouseenter(function(){
+          $(this).css('background-color',id);
+          });
+      }
+      else if(id === 'blue'){
+        console.log('blue is selected');
+        $('.grid').mouseenter(function(){
+          $(this).css('background-color',id);
+          });
+      }
+      else if(id === 'green'){
+        console.log('green is selected');
+        $('.grid').mouseenter(function(){
+          $(this).css('background-color',id);
+          });
+      }
+    });
   });

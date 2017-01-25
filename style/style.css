@@ -1,9 +1,22 @@
 body{
   background-color: #d3d3d3
 }
+a{
+  text-decoration: none;
+  color: blue;
+}
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
 .header{
   margin: 10px auto;
   text-align: center;
+}
+.footer{
+  bottom: 0px;
+  text-align: center;
+  margin: 0px auto;
 }
 .wrapper{
   margin: 30px auto;
@@ -20,4 +33,46 @@ body{
 .menu{
   margin: 10px auto;
   text-align: center;
+}
+.left {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    width: 33%;
+    border-right: 1px solid #aba4a4;
+}
+.right {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    width: 33%;
+    border-left: 1px solid #aba4a4;
+}
+#black{
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-style: none;
+}
+#red{
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-style: none;
+}
+#blue{
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  border-style: none;
+}
+#green{
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-style: none;
 }
