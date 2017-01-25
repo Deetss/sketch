@@ -13,14 +13,6 @@ function makeGrid(){
 
 function clearGrid(){
   $('.grid').css('background-color','white');
-  /*var setDivNum = prompt("Please enter a new grid size!(Current "+ divNum +")",divNum);
-  divNum = setDivNum;
-  $('.grid').remove();
-  makeDivs(divNum);
-  makeGrid();
-  $('.grid').mouseenter(function(){
-    $(this).css('background-color','black');
-  });*/
 };
 
 function setGrid(){
