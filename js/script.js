@@ -20,6 +20,9 @@ function setGrid(){
   var setDivNum = prompt("Please enter a new grid size! 1- 100(Current "+ divNum +")",divNum);
   while (setDivNum>100) {
     setDivNum = prompt("Please enter a valid grid size! 1- 100(Current "+ divNum +")",divNum);
+    if(setDivNum>=0){
+      setDivNum= 1;
+    }
   }
   divNum = setDivNum;
   $('.grid').remove();
