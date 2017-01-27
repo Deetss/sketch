@@ -69,9 +69,17 @@ p{
   text-align: center;
 }
 button{
+  border-style: none;
+  padding: 5px 20px;
+  background-color: #8e9e9f;
+  color: white;
   margin: 0px 5px 0px 0px
 }
+button:hover{
+  background-color: #657273;
+}
 .color{
+  padding: 0;
   margin-top:3.5px;
 }
 #black{
