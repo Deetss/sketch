@@ -1,5 +1,8 @@
-body{
-  background-color: #d3d3d3
+html,body{
+  margin:0;
+  padding:0;
+  height: 100%;
+  background-color: #a7adba;
 }
 a{
   text-decoration: none;
@@ -9,19 +12,50 @@ a:hover{
   text-decoration: underline;
   color: blue;
 }
-.header{
-  margin: 10px auto;
-  text-align: center;
+h1{
+  color:white ;
+  margin:0px;
+  padding:10px 0px;
 }
-.footer{
+#body{
+    height: 100%;
+}
+#main{
+    margin: 0px auto;
+    padding-top: 50px;
+    background-color: white;
+    border:1px solid grey;
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 540px;
+    height: 100%;
+}
+#header{
+  background-color: #6e7f80 ;
+  margin: 0px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom:1px solid #505e5f;
+}
+#footer{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top:1px solid #505e5f;
+  color: white;
+  position: fixed;
+  background-color: #6e7f80;
+  width: 100%;
   bottom: 0px;
   text-align: center;
-  margin: 0px auto;
 }
-.wrapper{
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
+p{
+  margin:0px;
+}
+#box{
+  margin: 0 auto;;
+  height: 500px;
+  width: 500px;
   border: 1px solid black;
 }
 .grid{
@@ -30,27 +64,15 @@ a:hover{
   height: 10px;
   float: left;
 }
-.menu{
-  margin: 10px auto;
+#menu{
+  margin-top: 10px;
   text-align: center;
 }
-.left {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    background-color: white;
-    height: 100%;
-    width: 33%;
-    border-right: 1px solid #aba4a4;
+button{
+  margin: 0px 5px 0px 0px
 }
-.right {
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    background-color: white;
-    height: 100%;
-    width: 33%;
-    border-left: 1px solid #aba4a4;
+.color{
+  margin-top:3.5px;
 }
 #black{
   width: 15px;

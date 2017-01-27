@@ -1,12 +1,12 @@
 var divNum = 16;
 function makeDivs(divNum){
   for (var i = 1; i <= (divNum * divNum); i++){
-    $('.wrapper').append('<div>');
+    $('#box').append('<div>');
   }
 };
 function makeGrid(){
-  $('.wrapper>div').addClass('grid');
-  adjGrid = (300/divNum)+"px";
+  $('#box>div').addClass('grid');
+  adjGrid = (500/divNum)+"px";
   $('.grid').css("width", adjGrid.toString());
   $('.grid').css("height", adjGrid.toString());
 };

@@ -8,26 +8,27 @@
   <title>Etch-a-sketch!</title>
 </head>
 <body>
-  <div class="left">
-  </div>
-  <div class="right">
-  </div>
-  <div class="header">
-    <h1>Draw away!</h1>
-  </div>
-  <div class="wrapper">
-  </div>
-  <div class="menu">
-    <button type="button" onclick="clearGrid()">Clear</button>
-    <button type="button" onclick="setGrid()">Set Grid</button>
-    <button type="button" onclick="toggleRainbow()">Rainbow!</button>
-    <button type="button" id="black"></button>
-    <button type="button" id="red"></button>
-    <button type="button" id="blue"></button>
-    <button type="button" id="green"></button>
-  </div>
-  <div class="footer">
-  <p>Written by <span><a href="https://github.com/Deetss">Deetss</a></span></p>
+  <div id="body">
+
+
+    <div id="header">
+      <h1>Draw away!</h1>
+    </div>
+    <div id="main">
+      <div id="box">
+      </div>
+      <div id="menu">
+        <button type="button" onclick="clearGrid()">Clear</button>
+        <button type="button" onclick="setGrid()">Set Grid</button>
+        <button type="button" onclick="toggleRainbow()">Rainbow!</button>
+        <button type="button" class="color" id="black"></button>
+        <button type="button" class="color" id="red"></button>
+        <button type="button" class="color" id="blue"></button>
+        <button type="button" class="color" id="green"></button>
+      </div>
+    </div>
+    <div id="footer"><p id="footer-text">Written by <span><a     href="https://github.com/Deetss">Deetss</a></span></p>
+    </div>
   </div>
 </body>
 </html>
