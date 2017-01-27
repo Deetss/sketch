@@ -18,11 +18,8 @@ function clearGrid(){
 function setGrid(){
   $('.grid').css('background-color','white');
   var setDivNum = prompt("Please enter a new grid size! 1- 100(Current "+ divNum +")",divNum);
-  while (setDivNum>100) {
+  while (setDivNum>100|setDivNum<=0) {
     setDivNum = prompt("Please enter a valid grid size! 1- 100(Current "+ divNum +")",divNum);
-    if(setDivNum>=0){
-      setDivNum= 1;
-    }
   }
   divNum = setDivNum;
   $('.grid').remove();
